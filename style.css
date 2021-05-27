@@ -72,6 +72,9 @@ p {
     -webkit-transform: rotate(45deg);
 }
 
+/* Header Main
+================*/
+
 .header-main {
 	background-color: #ffcc00;
 }
@@ -145,4 +148,66 @@ p {
 
 .zoom-icon {
 	display: block;
+}
+
+/* Main
+================*/
+
+.main {
+	width: 100%;
+	height: 800px;
+	background: url(img/bg.png) center no-repeat;
+	background-size: cover;
+}
+
+.shadow {
+	display: inline-block;
+	width: 100%;
+	height: 800px;
+	background: url(img/bg-shadow.png)center no-repeat;
+	background-size: cover;
+}
+
+.main-title {
+	margin: 180px 0 25px;
+	font-size: 70px;
+	line-height: 1.2;
+	font-weight: 700;
+	color: #fff;
+}
+
+.main-content {
+	padding-top: 20px;
+	position: relative;
+	color: #ffcc00;
+	font-weight: 300;
+}
+
+.yellow-line {
+	content: "";
+	width: 100px;
+	height: 4px;
+	position: absolute;
+
+	background-color: #ffcc00;
+	top: 0;
+	left: 0;
+}
+
+.main-service {
+	margin: 45px 0 0;
+	display: flex;
+}
+
+.service-item {
+	margin-right: 25px;
+	font-size: 30px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.service-point {
+	margin-right: 25px;
+	font-size: 30px;
+	color: #ffcc00;
 }
