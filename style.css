@@ -24,6 +24,7 @@ p {
 }
 
 .page {
+	overflow: hidden;
 }
 
 .container {
@@ -279,16 +280,29 @@ p {
 ================*/
 
 .footer {
-	width: 100%;
 	max-height: 310px;
 	background-color: #fff;
 }
 
-.footer-bcg {
+.footer-bg {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-right-flex {
 	display: flex;
 }
 
-.footer-left-red {
+.footer-left-flex {
+	display: flex;
+}
+
+.footer-yellow {
+	width: 40px;
+	background-color: #ffcc00;
+}
+
+.footer-red {
 	width: 40px;
 	background-color: #ba0000;
 }
@@ -296,26 +310,21 @@ p {
 .footer-img {
 	display: block;
 	height: 310px;
+	
 }
-
-.footer-right-yellow {
-	width: 40px;
-	background-color: #ffcc00;
-}
-
-
 /* Footer-Content
 ================*/
 
 .footer-content {
+	width: 860px;
 	margin-top: 60px;
 	display: flex;
 	justify-content: space-between;
 }
 
-/*.footer-contact {
-	margin-right: 130px;
-}*/
+
+/* Footer-List
+================*/
 
 .footer-title {
 	font-size: 24px;
