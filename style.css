@@ -23,6 +23,9 @@ p {
 	margin: 0;
 }
 
+.page {
+}
+
 .container {
 	padding: 0;
 	max-width: 1170px;
@@ -49,6 +52,15 @@ p {
 	display: flex;
 }
 
+.header-nav-link {
+	transition: color .2s linear;
+}
+
+.header-nav-link:hover {
+	cursor: pointer;
+	color: #ccc;
+}
+
 
 .header-nav-link.contact {
 	margin-right: 2rem;
@@ -66,10 +78,17 @@ p {
     padding: 3px;
     margin: 0 0 2px 5px;
 
-	transition: color .2s linear;
+	transition: color .5s linear;
 
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+.header-nav-link:hover .arrow-down {
+	cursor: pointer;
+	border-color: #ccc;
+	transform: rotate(225deg);
+	-webkit-transform: rotate(225deg);
 }
 
 /* Header Main
@@ -147,7 +166,7 @@ p {
 }
 
 .header-main-search:hover {
-	box-shadow: 0.4em 0.9em 1rem rgba(186, 0 ,0 , 0.5);
+	box-shadow: 0.4em 0.6em 1rem rgba(186, 0 ,0 , 0.5);
 }
 
 .zoom-icon {
@@ -253,4 +272,80 @@ p {
 
 .btn-dhl-world:hover {
 	box-shadow: 5px 5px 20px 5px rgba(255, 255, 255, .5);
+}
+
+
+/* Footer
+================*/
+
+.footer {
+	width: 100%;
+	max-height: 310px;
+	background-color: #fff;
+}
+
+.footer-bcg {
+	display: flex;
+}
+
+.footer-left-red {
+	width: 40px;
+	background-color: #ba0000;
+}
+
+.footer-img {
+	display: block;
+	height: 310px;
+}
+
+.footer-right-yellow {
+	width: 40px;
+	background-color: #ffcc00;
+}
+
+
+/* Footer-Content
+================*/
+
+.footer-content {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*.footer-contact {
+	margin-right: 130px;
+}*/
+
+.footer-title {
+	font-size: 24px;
+	font-weight: 500;
+	color: #ba0000;
+}
+
+.footer-list {
+	margin-top: 30px;
+	padding: 0;
+}
+
+.list-element {
+	font-weight: 700;
+	color: #ba0000;
+	list-style-type: none;
+}
+
+.list-link {
+	padding-left: 5px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #808080;
+	transition: color .2s linear;
+}
+
+.list-link:hover {
+	color: #ffcc00;
+}
+
+.list-link.social:hover {
+	color: #017edf;
 }
