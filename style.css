@@ -141,9 +141,13 @@ p {
 	width: 55px;
 	height: 55px;
 
+ 	border-radius: 50%;
+	transition: box-shadow .2s linear;
 	background-color: #ba0000;
+}
+
+.header-main-search:hover {
 	box-shadow: 0.4em 0.9em 1rem rgba(186, 0 ,0 , 0.5);
-	border-radius: 50%;
 }
 
 .zoom-icon {
@@ -210,4 +214,43 @@ p {
 	margin-right: 25px;
 	font-size: 30px;
 	color: #ffcc00;
+}
+
+.main-btn {
+	margin-top: 40px;
+	display: flex;
+}
+
+.btn-more {
+	margin-right: 22px;
+	padding: 11px 2rem 11px 2rem;
+
+	font-weight: 500;
+	text-decoration: none;
+
+	color: #c31b00;
+	border-radius: 25px;
+	background-color: #ffcc00;
+	transition: box-shadow .2s linear;
+}
+
+.btn-more:hover {
+	box-shadow: 5px 5px 20px 5px rgba(255, 204, 0, .5);
+}
+
+.btn-dhl-world {
+	padding: 11px 2rem 11px 2rem;
+
+	font-weight: 500;
+	text-decoration: none;
+
+	color: #fff;
+	border-radius: 25px;
+	background-color: rgba(255, 255, 255, 0);
+	border: 2px #fff solid;
+	transition: box-shadow .2s linear;
+}
+
+.btn-dhl-world:hover {
+	box-shadow: 5px 5px 20px 5px rgba(255, 255, 255, .5);
 }
