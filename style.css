@@ -116,38 +116,23 @@ p {
 }
 
 .header-main-link {
-	display: block;
+	display: inline-block;
 	margin-right: 45px;
+	padding: 46px 0;
 
 	font-weight: 400;
 	font-family: inherit;
 	color: #c31b00;
 	text-decoration: none;
 
+	border-bottom: 4px solid rgba(255, 255, 255, 0);
 	transition: color .2s linear;
+	transition: border-color .2s linear;
 }
 
 .header-main-link:hover {
 	color: red;
-}
-
-.header-main-link.active {
-	color: red;
-	position: relative;
-}
-
-.header-main-link.active:after {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 4px;
-
-	font-weight: 700;
-	background-color: red;
-
-	left: 0;
-	bottom: -48px;
-
+	border-bottom: 4px red solid;
 }
 
 .header-main-link:last-child {
@@ -174,7 +159,7 @@ p {
 	display: block;
 }
 
-/* Main
+/* Main-Header
 ================*/
 
 .main {
@@ -274,6 +259,71 @@ p {
 .btn-dhl-world:hover {
 	box-shadow: 5px 5px 20px 5px rgba(255, 255, 255, .5);
 }
+
+
+/* Main-Header
+================*/
+
+.main-services {
+	background-color: #fff;
+	max-height: 730px;
+	height: 730px;
+}
+
+.services-header {
+	margin: 140px 0 115px;
+	font-size: 50px;
+	font-weight: 500;
+	color: #ba0000;
+}
+
+.services-content {
+	display: flex;
+}
+
+.services.column {
+	margin-right: 30px;
+	
+}
+
+.services-subtitle {
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: #ba0000;
+}
+
+.services-text {
+	margin-bottom: 25px;
+	font-size: 16px;
+	color: #777;
+}
+
+.services-more {
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.services-more span {
+	font-weight: 700;
+	font-size: 18px;
+	color: #ba0000;
+}
+
+.services-img {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.services-form {
+	height: 340px;
+	width: 270px;
+}
+
+
+
+
 
 
 /* Footer
