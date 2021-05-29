@@ -482,8 +482,12 @@ p {
 	height: 100%;
 }
 
+.send-flex {
+	display: flex;
+}
+
 .main-form {
-	margin-bottom: 90px;
+	margin: 0 125px 90px 0;
 	height: 535px;
 	width: 570px;
 	background-color: #ba0000;
@@ -530,6 +534,33 @@ p {
 	font-weight: 600;
 	font-size: 18px;
 }
+
+.yellow-border {
+	position: relative;
+	width: 400px;
+	height: 460px;
+	border: 20px #ffcc00 solid;
+}
+
+.bayern {
+	position: absolute;
+	bottom: -50px;
+	right:  -50px;
+}
+
+.bayern-fire {
+	position: absolute;
+	width: 435px;
+	bottom: -50px;
+	right:  -50px;
+}
+
+.bayern-logo {
+	position: absolute;
+	bottom: -50px;
+	left: 50px;
+}
+
 
 
 
