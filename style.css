@@ -226,7 +226,8 @@ p {
 	display: flex;
 }
 
-.btn-more {
+.btn-more,
+.btn-form {
 	margin-right: 22px;
 	padding: 11px 2rem 11px 2rem;
 
@@ -239,7 +240,8 @@ p {
 	transition: box-shadow .2s linear;
 }
 
-.btn-more:hover {
+.btn-more:hover,
+.btn-form:hover {
 	box-shadow: 5px 5px 20px 5px rgba(255, 204, 0, .5);
 }
 
@@ -303,6 +305,11 @@ p {
 	font-size: 16px;
 	font-weight: 700;
 	text-decoration: none;
+	transition: color .2s linear;
+}
+
+.services-more:hover {
+	color: #565151;
 }
 
 .services-more span {
@@ -316,13 +323,87 @@ p {
 	margin-bottom: 30px;
 }
 
+/* Form */
+
 .services-form {
-	height: 340px;
-	width: 270px;
+	height: 345px;
+	max-width: 270px;
+	width: 100%;
+
+	background-color: #ba0000;
 }
 
+.form-container {
+	max-width: 210px;
+	width: 100%;
+	margin: 0 auto;
+}
 
+.form-title {
+	margin: 2rem 0 2rem;
+	font-size: 20px;
+	color: #fff;
+}
 
+.form-line {
+	position: relative;
+}
+
+.form-text {
+	margin-bottom: 40px;
+	padding-top: 30px;
+	font-size: 16px;
+	color: #fff;
+
+}
+
+.little-line {
+	content: "";
+	width: 70px;
+	height: 2px;
+	position: absolute;
+
+	background-color: #ffcc00;
+	top: 0;
+	left: 0;
+}
+
+.select {
+	margin-bottom: 20px;
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+
+	font-style: inherit;
+	font-size: 16px;
+	font-weight: 400;
+
+	appearance: none;
+	color: #fff;
+	background-color: #9d0000;
+	border: none;
+}
+
+.select.minimal {
+  background-image:
+    linear-gradient(45deg, transparent 50%, #fff 50%),
+    linear-gradient(135deg, #fff 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.btn-form {
+	font-family: inherit;
+	border: none;
+}
 
 
 
