@@ -462,6 +462,10 @@ p {
 	margin-left: 30px;
 }
 
+.aerospace h2 {
+	margin-top: 15px;
+}
+
 
 .about-flex {
 	margin-top: 314px;
@@ -558,9 +562,53 @@ p {
 .bayern-logo {
 	position: absolute;
 	bottom: -50px;
-	left: 50px;
+	left: 25px;
 }
 
+
+
+/* Main-More
+================*/
+
+.main-more {
+	height: 350px;
+	background-color: #ba0000;
+	color: #fff;
+}
+
+.more-flex {
+	display: flex;
+}
+
+.more-content {
+	display: inline-block;
+	margin: 110px 200px 0 0;
+	max-width: 630px;
+	width: 100%;
+}
+
+.more-title {
+	margin-bottom: 40px;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.more-text {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.btn-more.more {
+	display: inline-block;
+	margin-top: 200px;
+
+	color: #fff;
+	background-color: #a00000;
+}
+
+.btn-more.more:hover {
+	box-shadow: 5px 5px 20px 5px rgba(255, 255, 255, .5);
+}
 
 
 
