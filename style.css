@@ -915,10 +915,6 @@ p {
 		flex-direction: column;
 	}
 
-	.header-main-logo {
-		order: 1;
-	}
-
 	.header-main-link {
 		order: 3;
 		margin-right: 10px;
