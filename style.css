@@ -28,8 +28,8 @@ p {
 }
 
 .container {
-	padding: 0;
-	max-width: 1170px;
+	padding: 0 1rem;
+	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -54,6 +54,7 @@ p {
 }
 
 .header-nav-link {
+	margin-right: 2rem;
 	transition: color .2s linear;
 }
 
@@ -63,9 +64,6 @@ p {
 }
 
 
-.header-nav-link.contact {
-	margin-right: 2rem;
-}
 
 .header-icon {
 	margin-right: 5px;
@@ -140,6 +138,7 @@ p {
 }
 
 .header-main-search {
+	margin-right: 2rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -263,7 +262,7 @@ p {
 }
 
 
-/* Main-Header
+/* Main-Services
 ================*/
 
 .main-services {
@@ -283,8 +282,14 @@ p {
 	display: flex;
 }
 
-.services.column.about {
-	margin-right: 30px;
+.adaptive-flex {
+	display: flex;
+}
+
+
+.services-column {
+	width: 270px;
+	margin-right: 15px;
 	
 }
 
@@ -295,6 +300,7 @@ p {
 }
 
 .services-text {
+	width: ;
 	margin-bottom: 25px;
 	font-size: 16px;
 	color: #777;
@@ -326,9 +332,11 @@ p {
 /* Form */
 
 .services-form {
+	margin-right: 1rem;
+	max-height: 345px; 
 	height: 345px;
 	max-width: 270px;
-	width: 100%;
+	width: 270px;
 
 	background-color: #ba0000;
 }
@@ -340,7 +348,7 @@ p {
 }
 
 .form-title {
-	margin: 2rem 0 2rem;
+	padding: 2rem 0 2rem;
 	font-size: 20px;
 	color: #fff;
 }
@@ -430,6 +438,7 @@ p {
 }
 
 .about-title {
+	text-align: center;
 	display: inline-block;
 	margin-top: 150px;
 	color: #fff;
@@ -452,10 +461,17 @@ p {
 
 }
 
+.about-flex {
+	margin-top: 299px;
+	display: flex;
+}
+
 .aerospace {
+	margin-right: 30px;
 	height: 410px;
 	box-shadow: 0px 5px 20px 10px rgba(34, 60, 80, 0.2);
 }
+
 
 
 .aerospace h2, ul {
@@ -464,13 +480,6 @@ p {
 
 .aerospace h2 {
 	margin-top: 15px;
-}
-
-
-.about-flex {
-	margin-top: 314px;
-	display: flex;
-	justify-content: space-between;
 }
 
 .list-element.about {
@@ -641,10 +650,6 @@ p {
 	border: 2px #a00000 solid;
 }
 
-.content-client:last-child {
-	margin-right: 0;
-}
-
 .content-img {
 	margin: 45px 0 0 16.5px;
 }
@@ -739,3 +744,193 @@ p {
 	color: #017edf;
 }
 
+
+
+
+
+/* Media
+================*/
+
+@media (max-width: 1200px) {
+
+	.about-flex {
+		margin-top: 310px;
+		margin-right: 15px;
+	}
+	
+	.about-title {
+		font-size: 48px;
+	}
+
+	.aerospace img {
+		width: 350px;
+	}
+
+	.main-form {
+		margin: 0 75px 90px 0;
+	}
+}
+
+@media (max-width: 1140px) {
+
+	.about-flex {
+	margin-top: 339px;
+	}		
+
+	.about-title {
+		font-size: 42px;
+	}
+
+	.aerospace img {
+		width: 300px;
+	}
+
+	.services-img {
+		width: 220px;
+	}
+
+	.services-text {
+		font-size: 14px;
+	}
+
+
+	.yellow-border {
+		display: none;
+	}
+
+	.main-form {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.bayern {
+		display: none;
+	}
+
+	.bayern-fire {
+		display: none;
+	}
+
+	.bayern-logo {
+		display: none;
+	}
+
+	.more-content {
+		margin-right: 100px;
+	}
+
+	.content-client {
+		margin-right: 20px;
+		width: 243px;
+		height: 117px;
+	}
+
+	.content-img {
+		width: 220px;
+		height: auto;
+	}
+}
+
+@media (max-width: 1060px) {
+
+	.main-services {
+		background-color: #fff;
+		max-height: 1000px;
+		height: auto;
+	}
+
+	.services-header {
+		text-align: center;
+		margin: 50px 0 25px 0;
+	}
+
+	.adaptive-flex {
+		margin: 50px auto;
+		display: block;
+	}
+
+	.services-column {
+		margin-bottom: 50px;
+	}
+
+	.services-column:last-child {
+		margin-bottom: 0;
+	}
+
+	.about-title {
+		font-size: 38px;
+	}
+
+	.content-client {
+		margin-right: 20px;
+		width: 206px;
+		height: 99px;
+	}
+
+	.content-img {
+		width: 170px;
+		height: auto;
+	}
+}
+
+@media (max-width: 925px) {
+
+	.page {
+		overflow: auto;	
+	}
+
+	.header-main-link {
+		margin-right: 25px;
+	}
+
+	.about-title {
+		line-height: 1;
+	}
+
+	.content-client {
+		margin-right: 20px;
+		width: 175px;
+		height: 84px;
+	}
+
+	.content-img {
+		width: 150px;
+		height: auto;
+	}
+}
+
+
+@media (max-width: 375px) {
+
+	.heaedr-main {
+		height: auto;
+		max-height: 500px;
+	}
+	.header-nav-link {
+		padding: 0;
+		font-size: 10px;
+	}
+
+	.header-main-inner {
+		flex-direction: column;
+	}
+
+	.header-main-logo {
+		order: 1;
+	}
+
+	.header-main-link {
+		order: 3;
+		margin-right: 10px;
+		padding: 0;
+		font-size: 10px;
+	}
+
+	.header-main-link:last-child {
+		margin-right: 20px;
+	}
+
+	.header-main-search {
+		order: 2;
+	}
+}
