@@ -152,7 +152,7 @@ p {
 }
 
 .header-main-search:hover {
-	box-shadow: 0.4em 0.6em 1rem rgba(186, 0 ,0 , 0.5);
+	box-shadow: 0px 5px 20px 10px rgba(186, 0 ,0 , 0.5);
 }
 
 .zoom-icon {
@@ -242,7 +242,7 @@ p {
 
 .btn-more:hover,
 .btn-form:hover {
-	box-shadow: 5px 5px 20px 5px rgba(255, 204, 0, .5);
+	box-shadow: 0px 5px 20px 10px rgba(255, 204, 0, .5);
 }
 
 .btn-dhl-world {
@@ -259,7 +259,7 @@ p {
 }
 
 .btn-dhl-world:hover {
-	box-shadow: 5px 5px 20px 5px rgba(255, 255, 255, .5);
+	box-shadow: 0px 5px 20px 10px rgba(255, 255, 255, .5);
 }
 
 
@@ -454,7 +454,7 @@ p {
 
 .aerospace {
 	height: 410px;
-	box-shadow: 4px 11px 29px 2px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 5px 20px 10px rgba(34, 60, 80, 0.2);
 }
 
 
@@ -518,7 +518,7 @@ p {
 .form-btn:hover {
 	background-color: #ffcc00;
 	color: #ba0000;
-	box-shadow: 4px 11px 29px 2px rgba(255, 204, 0, 0.4);
+	box-shadow: 0px 5px 20px 10px rgba(255, 204, 0, 0.4);
 
 }
 
@@ -609,6 +609,48 @@ p {
 .btn-more.more:hover {
 	box-shadow: 0px 5px 20px 10px rgba(255, 255, 255, .5);
 }
+
+
+
+/* More-Client
+================*/
+
+.more-client {
+	height: 270px;
+}
+
+.client-flex {
+	display: flex;
+}
+
+.content-client {
+	padding: 2px;
+	margin: 70px 30px 0 0;
+	display: block;
+	width: 270px;
+	height: 130px;
+
+	background-color: #ccc;
+	transition: border-color .2s linear;
+	transition: background-color .2s linear;
+}
+
+.content-client:hover {
+	padding: 0;
+	background-color: #EFE9E9;
+	border: 2px #a00000 solid;
+}
+
+.content-client:last-child {
+	margin-right: 0;
+}
+
+.content-img {
+	margin: 45px 0 0 16.5px;
+}
+
+
+
 
 
 
